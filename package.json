@@ -1,0 +1,19 @@
+{
+  "name": "script-starter-nodejs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/EagleLizard/script-starter-nodejs.git"
+  },
+  "author": "EagleLizard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/EagleLizard/script-starter-nodejs/issues"
+  },
+  "homepage": "https://github.com/EagleLizard/script-starter-nodejs#readme"
+}
