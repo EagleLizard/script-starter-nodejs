@@ -1,6 +1,8 @@
 
 const fs = require('fs'); // fs short for 'file system', it is built-in to nodejs
 
+const basicPromises = require('./basic-promises'); // you can pull in code from other JS files to use with require and the relative file path
+
 /*
   We can call the 'main' function on a line before the line it is declared on.
     When you create a function using the 'function' keyword, the reference to that
@@ -11,7 +13,11 @@ const fs = require('fs'); // fs short for 'file system', it is built-in to nodej
 main();
 
 function main() {
-  simpleSum();
+  // simpleSum();
+  // basicPromises.timeoutExample();
+  // basicPromises.simplePromiseExample();
+  // basicPromises.sleepExample();
+  basicPromises.sleepExampleAwait();
 }
 
 /*
@@ -25,8 +31,4 @@ function simpleSum() {
   
   // add the numbers and log
 
-}
-
-function apiRequests() {
-  
 }
