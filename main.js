@@ -13,22 +13,28 @@ const basicPromises = require('./basic-promises'); // you can pull in code from 
 main();
 
 function main() {
-  // simpleSum();
+  simpleSum();
   // basicPromises.timeoutExample();
   // basicPromises.simplePromiseExample();
   // basicPromises.sleepExample();
-  basicPromises.sleepExampleAwait();
+  // basicPromises.sleepExampleAwait();
 }
 
 /*
   Reads a file with numbers in it, adds it, and logs the result
 */
+
+
 function simpleSum() {
   let numbersFilePath = __dirname + '/numbers.txt'; // __dirname is the full directory path of the current .js file
   let numbersFileData = fs.readFileSync(numbersFilePath).toString(); // get the whole file as raw data, converts to string
-
-  // parse the numbers file string
-  
-  // add the numbers and log
+  let sum = 0;
+  let numbersArray = numbersFileData.split('\n');
+  for (let n of numbersArray) {
+    number = Number(n);
+    sum += number;
+  }
+  console.log(sum);
+  fs.writeFileSync("numbers_out.txt", `sum = ${sum}`); 
 
 }
